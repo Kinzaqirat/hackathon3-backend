@@ -1,0 +1,12 @@
+INFO:     Started server process [9356]
+INFO:     Waiting for application startup.
+INFO:__main__:Starting LearnFlow API...
+INFO:app.core.database:Creating database tables...
+INFO:app.core.database:Database tables created successfully
+INFO:__main__:Database initialized
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+ERROR:app.routes.auth:Registration error: bcrypt: no backends available -- recommend you install one (e.g. 'pip install bcrypt')
+INFO:     127.0.0.1:61019 - "POST /api/auth/register HTTP/1.1" 500 Internal Server Error
+WARNING:app.services.auth_service:Login attempt with non-existent email: testuser5@example.com
+INFO:     127.0.0.1:61021 - "POST /api/auth/login HTTP/1.1" 401 Unauthorized
