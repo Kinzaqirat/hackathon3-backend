@@ -44,6 +44,7 @@ class Settings(BaseSettings):
             "https://hackathon3-frontend.vercel.app",
         ]
     )
+    cors_origins_env: str = ""  # Can override with env var
 
     model_config = SettingsConfigDict(env_file='.env', case_sensitive=True, extra='allow')
 
